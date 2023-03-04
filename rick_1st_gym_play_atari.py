@@ -45,20 +45,9 @@ def play_atlantis(env_in):
             last_life_lost_time = time.time()
 
             # print("Remaining lives:", lives_upt, "Time since last life lost:", time_since_last_life_lost)
-            print("Remaining lives:", lives_upt, ". Time since I've become SMARTER!!! :D ", time_since_last_life_lost)
-        #
-        # if env.ale.lives() != lives_prev:
-        #     lives_upt = env.ale.lives()
-        #
-        #     time_upt = time.time()
-        #     time_diff = time_upt - time_prev
-        #     print("Remaining lives:", lives_upt, "Time since last life lost:", time_diff)
-        #     lives_prev = lives_upt
-        #     time_prev = time_upt
-        #
-        #     # print("Remaining lives:", lives_upt)
+            print("Remaining lives:", lives_upt, ". Time since I've become SMARTER!!! :D ",
+                  time_since_last_life_lost, " milliseconds.")
 
-        # Return the updated plot and text
         return im,
 
     # Create the animation with the update function and 1000 frames
